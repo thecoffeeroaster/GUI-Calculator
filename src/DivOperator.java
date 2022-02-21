@@ -18,7 +18,7 @@ public class DivOperator extends BinaryOperator
     @Override
     public Operand evaluate(Operand pLhsOperand, Operand pRhsOperand)
     {
-        return new Operand(pLhsOperand.getValue() + pRhsOperand.getValue());
+        return new Operand(pLhsOperand.getValue() / pRhsOperand.getValue());
     }
 
     /**
