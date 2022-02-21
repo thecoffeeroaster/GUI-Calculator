@@ -12,4 +12,14 @@
 /**
  * Operator is the superclass of all binary and unary operators.
  */
-???
+public abstract class Operator extends Token {
+
+    public Operator() {
+    }
+
+    abstract boolean isBinaryOperator();
+
+    abstract int precedence();
+
+    abstract int stackPrecedence();
+}
