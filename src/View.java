@@ -78,13 +78,13 @@ public class View extends JFrame implements ActionListener
 		ActionListener actionListener = this; // Josh, double check this again later if having problems
 		JPanel panelButtons = new JPanel();
 		
-		mClearButton = new JButton();
+		mClearButton = new JButton("Clear");
 		mClearButton.addActionListener(actionListener);
 		panelButtons.add(mClearButton);
-		mEvaluateButton = new JButton();
+		mEvaluateButton = new JButton("Evaluate");
 		mEvaluateButton.addActionListener(actionListener);
 		panelButtons.add(mEvaluateButton);
-		mExitButton = new JButton();
+		mExitButton = new JButton("Exit");
 		mExitButton.addActionListener(actionListener);
 		panelButtons.add(mExitButton);
 		
@@ -95,7 +95,7 @@ public class View extends JFrame implements ActionListener
 		// Add panelInput to panelMain.
 		// Add panelButtons to panelMain.
 		JPanel panelMain = new JPanel();
-		panelMain.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+		setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
 		panelMain.add(panelLabel);
 		panelMain.add(panelInput);
 		panelMain.add(panelButtons);
