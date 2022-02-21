@@ -1,14 +1,16 @@
-//**************************************************************************************************
-// CLASS: DList<E> (DList.java)
-//
-// AUTHOR
-// Kevin R. Burger (burgerk@asu.edu)
-// Computer Science & Engineering Program
-// Fulton Schools of Engineering
-// Arizona State University, Tempe, AZ 85287-8809
-//
-// (c) 2018 Kevin R Burger
-//**************************************************************************************************
+/************************************************************************************************
+ * CLASS: DList (DList.java)
+ *
+ * DESCRIPTION
+ * This provides the framework for a double linked list in linear format.
+ *
+ * COURSE AND PROJECT INFORMATION
+ * CSE 205 Object-Oriented Programming and Data Structures, Spring A 2022
+ * Project Number: project-4
+ *
+ * AUTHORS: Joshua McKenzie, ASU ID: 1209056897, jsmckenz@asu.edu
+ *        | Sean Loehr, ASU ID: 1222435526, smloehr@asu.edu
+ ************************************************************************************************/
 
 /**
  * Implements a generic doubly linked list where the type of each element is E.

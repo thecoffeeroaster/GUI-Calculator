@@ -1,13 +1,16 @@
-//**************************************************************************************************************
-// CLASS: Parenthesis
-//
-// AUTHOR
-// Kevin R. Burger (burgerk@asu.edu)
-// Computer Science & Engineering Program
-// Fulton Schools of Engineering
-// Arizona State University, Tempe, AZ 85287-8809
-// http://www.devlang.com
-//**************************************************************************************************************
+/************************************************************************************************
+ * CLASS: Parenthesis (Parenthesis.java)
+ *
+ * DESCRIPTION
+ * This class file is the superclass for RightParen and LeftParen class files
+ *
+ * COURSE AND PROJECT INFORMATION
+ * CSE 205 Object-Oriented Programming and Data Structures, Spring A 2022
+ * Project Number: project-4
+ *
+ * AUTHORS: Joshua McKenzie, ASU ID: 1209056897, jsmckenz@asu.edu
+ *        | Sean Loehr, ASU ID: 1222435526, smloehr@asu.edu
+ ************************************************************************************************/
 
 /**
  * Parenthesis is the superclass of LeftParen and RightParen. These are treated as a weird sort of Operator
