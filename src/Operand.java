@@ -15,10 +15,11 @@
 /**
  * An operand is a numeric value represented as a Double.
  */
-public class Operand extends Token {
-    private double mValue;
+public class Operand extends Token
+{
+    private Double mValue;
 
-    public Operand(double pvalue)
+    public Operand(Double pvalue)
     {
         setValue(pvalue);
     }
@@ -28,7 +29,7 @@ public class Operand extends Token {
         return mValue;
     }
 
-    public void setValue(double pvalue)
+    public void setValue(Double pvalue)
     {
         mValue = pvalue;
     }
