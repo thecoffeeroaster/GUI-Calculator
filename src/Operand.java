@@ -30,5 +30,4 @@ public class Operand extends Token {
         mValue = pvalue;
     }
 
-
 }
