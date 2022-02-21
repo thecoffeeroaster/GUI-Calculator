@@ -17,21 +17,21 @@
  */
 public class Operand extends Token
 {
-    private Double mValue;
-
-    public Operand(Double pvalue)
-    {
-        setValue(pvalue);
-    }
-
-    public double getValue()
-    {
-        return mValue;
-    }
-
-    public void setValue(Double pvalue)
-    {
-        mValue = pvalue;
-    }
-
+	private Double mValue;
+	
+	public Operand(Double pvalue)
+	{
+		setValue(pvalue);
+	}
+	
+	public double getValue()
+	{
+		return mValue;
+	}
+	
+	public void setValue(Double pvalue)
+	{
+		mValue = pvalue;
+	}
+	
 }
