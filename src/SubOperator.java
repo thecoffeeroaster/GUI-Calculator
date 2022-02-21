@@ -1,13 +1,16 @@
-//**************************************************************************************************************
-// CLASS: SubOperator
-//
-// AUTHOR
-// Kevin R. Burger (burgerk@asu.edu)
-// Computer Science & Engineering Program
-// Fulton Schools of Engineering
-// Arizona State University, Tempe, AZ 85287-8809
-// http://www.devlang.com
-//**************************************************************************************************************
+/************************************************************************************************
+ * CLASS: SubOperator (SubOperator.java)
+ *
+ * DESCRIPTION
+ * Class file responsible for performing subtraction operations on two operands.
+ *
+ * COURSE AND PROJECT INFORMATION
+ * CSE 205 Object-Oriented Programming and Data Structures, Spring A 2022
+ * Project Number: project-4
+ *
+ * AUTHORS: Joshua McKenzie, ASU ID: 1209056897, jsmckenz@asu.edu
+ *        | Sean Loehr, ASU ID: 1222435526, smloehr@asu.edu
+ ************************************************************************************************/
 
 /**
  * Represents the subtraction operator which is a specific type of binary operator.

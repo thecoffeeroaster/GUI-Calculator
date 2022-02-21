@@ -1,13 +1,16 @@
-//**************************************************************************************************************
-// CLASS: Expression
-//
-// AUTHOR
-// Kevin R. Burger (burgerk@asu.edu)
-// Computer Science & Engineering Program
-// Fulton Schools of Engineering
-// Arizona State University, Tempe, AZ 85287-8809
-// http://www.devlang.com
-//**************************************************************************************************************
+/************************************************************************************************
+ * CLASS: Expression (Expression.java)
+ *
+ * DESCRIPTION
+ * This class file stores the operators and operands in a queue format.
+ *
+ * COURSE AND PROJECT INFORMATION
+ * CSE 205 Object-Oriented Programming and Data Structures, Spring A 2022
+ * Project Number: project-4
+ *
+ * AUTHORS: Joshua McKenzie, ASU ID: 1209056897, jsmckenz@asu.edu
+ *        | Sean Loehr, ASU ID: 1222435526, smloehr@asu.edu
+ ************************************************************************************************/
 
 /**
  * Represents an infix expression to be evaluated.

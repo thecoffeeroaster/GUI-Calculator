@@ -1,13 +1,18 @@
-//**************************************************************************************************************
-// CLASS: View
-//
-// AUTHOR
-// Kevin R. Burger (burgerk@asu.edu)
-// Computer Science & Engineering Program
-// Fulton Schools of Engineering
-// Arizona State University, Tempe, AZ 85287-8809
-// Web: http://www.devlang.com
-//**************************************************************************************************************
+/************************************************************************************************
+ * CLASS: View (View.java)
+ *
+ * DESCRIPTION
+ * This class creates the GUI part of the application, providing a window with
+ * the text field, buttons, and the label containing the result from performing
+ * operations.
+ *
+ * COURSE AND PROJECT INFORMATION
+ * CSE 205 Object-Oriented Programming and Data Structures, Spring A 2022
+ * Project Number: project-4
+ *
+ * AUTHORS: Joshua McKenzie, ASU ID: 1209056897, jsmckenz@asu.edu
+ *        | Sean Loehr, ASU ID: 1222435526, smloehr@asu.edu
+ ************************************************************************************************/
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -43,19 +48,19 @@ public class View extends JFrame implements ActionListener {
      */
     public View(Main pMain) {
         // Save a reference to the Main object pMain in mMain.
-        ???
+        // ???
 
         // PSEUDOCODE:
         // Declare and create a JPanel named panelLabel using the default FlowLayout layout manager.
         // Create mResultLabel as a JLabel initialized to the empty string ""
         // Add mResultLabel to panelLabel
-        ???
+        // ???
 
         // PSEUDOCODE:
         // Declare and create a JPanel named panelInput using the default FlowLayout layout manager.
         // Create mInputText as a JTextField initialized to 40 columns wide
         // Add mInputText to panelInput
-        ???
+        // ???
 
         // PSEUDOCODE:
         // Create a JPanel named panelButtons using FlowLayout.
@@ -64,7 +69,7 @@ public class View extends JFrame implements ActionListener {
         // Add the  Clear button to the panel.
         // Repeat the three above statements for the Evalute button.
         // Repeat the three above statements for the Exit button.
-        ???
+        // ???
 
         // PSEUDOCODE
         // Create a JPanel named panelMain using a vertical BoxLayout.
@@ -72,7 +77,7 @@ public class View extends JFrame implements ActionListener {
         // Add panelLabel to panelMain.
         // Add panelInput to panelMain.
         // Add panelButtons to panelMain.
-        ???
+        // ???
 
         setTitle("Kalkutron-9001");
         setSize(FRAME_WIDTH, FRAME_HEIGHT);
@@ -96,13 +101,13 @@ public class View extends JFrame implements ActionListener {
      *     Call exit() on mMain.
      * End If
      */
-    ???
+    // ???
 
     /**
      * clear() is called when the Clear button is clicked. Set the text in mInputText and mResultLabel to the
      * empty strings "".
      */
-    ???
+    // ???
 
     /**
      * evaluate() is called when the Evaluate button is clicked.
@@ -113,7 +118,7 @@ public class View extends JFrame implements ActionListener {
      * Call expr.evaluate() and assign the return value a Double object named result
      * Display result in mResultLabel (call toString on result)
      */
-    ???
+    // ???
 
     /**
      * messageBox()

@@ -1,13 +1,18 @@
-//**************************************************************************************************************
-// CLASS: Tokenizer
-//
-// AUTHOR
-// Kevin R. Burger (burgerk@asu.edu)
-// Computer Science & Engineering Program
-// Fulton Schools of Engineering
-// Arizona State University, Tempe, AZ 85287-8809
-// Web: http://www.devlang.com
-//**************************************************************************************************************
+/************************************************************************************************
+ * CLASS: Tokenizer (Tokenizer.java)
+ *
+ * DESCRIPTION
+ * The Tokenizer class scans a string containing an infix expression and breaks it
+ * into tokens. For this project, a token will be either an Operand (a double value),
+ * a LeftParen or RightParen, or an arithmetic UnaryOperator or BinaryOperator.
+ *
+ * COURSE AND PROJECT INFORMATION
+ * CSE 205 Object-Oriented Programming and Data Structures, Spring A 2022
+ * Project Number: project-4
+ *
+ * AUTHORS: Joshua McKenzie, ASU ID: 1209056897, jsmckenz@asu.edu
+ *        | Sean Loehr, ASU ID: 1222435526, smloehr@asu.edu
+ ************************************************************************************************/
 
 /**
  * The Tokenizer class scans a string containing an infix expression and breaks it into tokens. For this project,
