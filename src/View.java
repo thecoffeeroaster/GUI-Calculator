@@ -36,7 +36,7 @@ public class View extends JFrame implements ActionListener
 	
 	// Declare instance variables
 	private JButton mClearButton;
-	private JButton mEvalButton;
+	private JButton mEvaluateButton;
 	private JTextField mInputText;
 	private JButton mExitButton;
 	private final Main mMain;
@@ -56,13 +56,17 @@ public class View extends JFrame implements ActionListener
 		// Declare and create a JPanel named panelLabel using the default FlowLayout layout manager.
 		// Create mResultLabel as a JLabel initialized to the empty string ""
 		// Add mResultLabel to panelLabel
-		// ???
+		JPanel panelLabel = new JPanel();
+		mResultLabel = new JLabel("");
+		panelLabel.add(mResultLabel);
 		
 		// PSEUDOCODE:
 		// Declare and create a JPanel named panelInput using the default FlowLayout layout manager.
 		// Create mInputText as a JTextField initialized to 40 columns wide
 		// Add mInputText to panelInput
-		// ???
+		JPanel panelInput = new JPanel();
+		mInputText = new JTextField(40);
+		panelInput.add(mInputText);
 		
 		// PSEUDOCODE:
 		// Create a JPanel named panelButtons using FlowLayout.
@@ -71,7 +75,18 @@ public class View extends JFrame implements ActionListener
 		// Add the  Clear button to the panel.
 		// Repeat the three above statements for the Evalute button.
 		// Repeat the three above statements for the Exit button.
-		// ???
+		ActionListener actionListener = this; // Josh, double check this again later if having problems
+		JPanel panelButtons = new JPanel();
+		
+		mClearButton = new JButton();
+		mClearButton.addActionListener(actionListener);
+		panelButtons.add(mClearButton);
+		mEvaluateButton = new JButton();
+		mEvaluateButton.addActionListener(actionListener);
+		panelButtons.add(mEvaluateButton);
+		mExitButton = new JButton();
+		mExitButton.addActionListener(actionListener);
+		panelButtons.add(mExitButton);
 		
 		// PSEUDOCODE
 		// Create a JPanel named panelMain using a vertical BoxLayout.
@@ -79,9 +94,13 @@ public class View extends JFrame implements ActionListener
 		// Add panelLabel to panelMain.
 		// Add panelInput to panelMain.
 		// Add panelButtons to panelMain.
-		// ???
+		JPanel panelMain = new JPanel();
+		panelMain.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+		panelMain.add(panelLabel);
+		panelMain.add(panelInput);
+		panelMain.add(panelButtons);
 		
-		setTitle("Kalkutron-9001");
+		setTitle("Joshculator/Seanerator 1.0 (trial-version)");
 		setSize(FRAME_WIDTH, FRAME_HEIGHT);
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -103,13 +122,32 @@ public class View extends JFrame implements ActionListener
 	 *     Call exit() on mMain.
 	 * End If
 	 */
-	// ???
+	@Override
+	public void actionPerformed(ActionEvent pEvent)
+	{
+		if(pEvent.getSource() == mClearButton)
+		{
+			clear();
+		}
+		else if(pEvent.getSource() == mEvaluateButton)
+		{
+			evaluate();
+		}
+		else if(pEvent.getSource() == mExitButton)
+		{
+			mMain.exit();
+		}
+	}
 	
 	/**
 	 * clear() is called when the Clear button is clicked. Set the text in mInputText and mResultLabel to the
 	 * empty strings "".
 	 */
-	// ???
+	private void clear()
+	{
+		mInputText.setText("");
+		mResultLabel.setText("");
+	}
 	
 	/**
 	 * evaluate() is called when the Evaluate button is clicked.
@@ -120,7 +158,12 @@ public class View extends JFrame implements ActionListener
 	 * Call expr.evaluate() and assign the return value a Double object named result
 	 * Display result in mResultLabel (call toString on result)
 	 */
-	// ???
+	private void evaluate()
+	{
+		Expression expr = new Expression(mInputText.getText());
+		Double result = expr.evaluate();
+		mResultLabel.setText(result.toString());
+	}
 	
 	/**
 	 * messageBox()
@@ -132,7 +175,7 @@ public class View extends JFrame implements ActionListener
 	 */
 	public void messageBox(String pMessage)
 	{
-		JOptionPane.showMessageDialog(this, pMessage, "Message", JOptionPane.PLAIN_MESSAGE);
+		JOptionPane.showMessageDialog(this, pMessage, "Notice", JOptionPane.INFORMATION_MESSAGE);
 	}
 	
 }
